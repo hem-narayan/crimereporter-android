@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Reporter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow"></div>
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="bg-grid"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-icon">S</div>
+          <div>
+            <p class="eyebrow">Safety network</p>
+            <h1>Crime Reporter</h1>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Cyber</button>
+          <button class="nav-item">Physical</button>
+          <button class="nav-item">My Reports</button>
+          <button class="nav-item">Helpline</button>
+          <button class="nav-item">Admin</button>
+          <button class="nav-item">Map</button>
+        </nav>
+
+        <div class="profile-card">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Emergency response</strong>
+            <small>Live monitoring</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Public safety dashboard</p>
+            <h2>Report and monitor incidents</h2>
+          </div>
+          <button class="logout-btn">Logout</button>
+        </header>
+
+        <section class="hero-card">
+          <div>
+            <p class="eyebrow accent">Community safety</p>
+            <h3>Fast, secure incident reporting</h3>
+            <p>
+              Capture cyber or physical crimes with location, description,
+              evidence, and real-time escalation support.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button class="primary-btn">Submit report</button>
+            <button class="secondary-btn">View map</button>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <span>Total</span>
+            <strong>128</strong>
+          </div>
+          <div class="stat-card warning">
+            <span>Pending</span>
+            <strong>42</strong>
+          </div>
+          <div class="stat-card success">
+            <span>Resolved</span>
+            <strong>76</strong>
+          </div>
+          <div class="stat-card accent">
+            <span>Forwarded</span>
+            <strong>10</strong>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel form-panel">
+            <div class="panel-header">
+              <h3>New report</h3>
+              <span class="badge">Cyber crime</span>
+            </div>
+
+            <label>
+              <span>Crime type</span>
+              <select>
+                <option>Phishing</option>
+                <option>Identity theft</option>
+                <option>Harassment</option>
+                <option>Fraud</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Description</span>
+              <textarea rows="5">A suspicious fake transaction message was sent to several users with a cloned bank login page.</textarea>
+            </label>
+
+            <div class="inline-actions">
+              <button class="ghost-btn">Attach Screenshot</button>
+              <button class="ghost-btn">Use current location</button>
+            </div>
+
+            <label class="checkbox-row">
+              <input type="checkbox" checked />
+              <span>Report anonymously</span>
+            </label>
+
+            <button class="primary-btn full-width">Submit case</button>
+          </div>
+
+          <div class="panel list-panel">
+            <div class="panel-header">
+              <h3>Recent reports</h3>
+              <button class="mini-btn">Refresh</button>
+            </div>
+
+            <div class="report-card">
+              <div class="card-top">
+                <h4>Cyber — Phishing</h4>
+                <span class="status pending">Pending</span>
+              </div>
+              <p>Fake refund notification circulated through SMS and WhatsApp links.</p>
+              <small>22 Sep 2026 • 11:42 AM</small>
+            </div>
+
+            <div class="report-card">
+              <div class="card-top">
+                <h4>Physical — Theft</h4>
+                <span class="status forwarded">Forwarded</span>
+              </div>
+              <p>Mobile theft reported near the market area with camera evidence.</p>
+              <small>21 Sep 2026 • 8:20 PM</small>
+            </div>
+
+            <div class="report-card">
+              <div class="card-top">
+                <h4>Cyber — Harassment</h4>
+                <span class="status resolved">Resolved</span>
+              </div>
+              <p>Abusive messages and impersonation account reported to admin.</p>
+              <small>20 Sep 2026 • 5:15 PM</small>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
